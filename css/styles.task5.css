@@ -1,0 +1,77 @@
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #cc0000;
+  color: white;
+  font-family: "Exo 2", sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+#navlist {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navlist-item {
+  display: block;
+  padding: 20px 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#welcome-section {
+  text-align: center;
+  min-height: 100px;
+  padding-top: 100px;
+  display: block;
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    rgba(103, 0, 31, 0.8),
+    rgba(34, 101, 163, 0.5)
+  );
+}
+
+#projects {
+  text-align: center;
+  padding-top: 50px;
+  display: block;
+  background: linear-gradient(
+    45deg,
+    rgba(34, 101, 163, 0.5),
+    rgba(103, 0, 31, 0.8)
+  );
+}
+
+#projects-title {
+  text-decoration: underline;
+}
+
+#projects-flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.card {
+  width: 30%;
+  margin: 15px;
+  background: white;
+}
+
+.project-name {
+  display: block;
+  background: grey;
+  padding: 8px;
+}
+
+#profile-link {
+  margin: auto;
+}

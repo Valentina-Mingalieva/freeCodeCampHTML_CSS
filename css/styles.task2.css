@@ -1,0 +1,28 @@
+body {
+  background: teal;
+  width: 1200px;
+  margin: auto;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+}
+
+#description {
+  display: flex;
+  justify-content: center;
+}
+label {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+#survey-form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  width: 600px;
+}

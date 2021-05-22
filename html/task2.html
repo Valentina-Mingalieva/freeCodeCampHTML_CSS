@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="../css/styles.task2.css">
+</head>
+<body>
+    <h1 id="title">Title</h1>
+    
+    <p id="description">Form for the second task</p>
+    
+    <form id="survey-form">
+        <label id="name-label">Enter your name
+            <input id="name" type="text" placeholder="Enter your name" required></input>
+        </label>
+    
+        <label id="email-label">Enter your email
+            <input id="email" type="email" placeholder="Enter your email" required></input>
+        </label>
+    
+        <label id="number-label">Enter your number
+            <input id="number" type="number" placeholder="Enter your number" min="1" max="5" required></input>
+        </label>
+    
+        <label>How old are you?
+            <select id="dropdown" name="age">
+                <option value="18-28">18-28</option>
+                <option value="29-39">29-39</option>
+                <option value="40-50">40-50</option>
+                <option value="51-90">51-90</option>
+            </select>
+        </label>
+    
+        <label>I want to pay with...
+            <fieldset>
+                <label>Mastercard
+                    <input type="radio" id="mc" name="Zahlmethode" value="Mastercard" </label>
+                    <label>Visa
+                        <input type="radio" id="vi" name="Zahlmethode" value="Visa">
+                    </label>
+                    <label>American Express
+                        <input type="radio" id="ae" name="Zahlmethode" value="AmericanExpress" checked>
+                    </label>
+            </fieldset>
+        </label>
+    
+        <label>I want to subscribe to...
+            <fieldset>
+                <label>News
+                    <input type="checkbox" id="news" name="Subscription" value="News" </label>
+                    <label>Sale
+                        <input type="checkbox" id="sale" name="Subscription" value="Sale">
+                    </label>
+                    <label>All
+                        <input type="checkbox" id="all" name="Subscription" value="all" checked>
+                    </label>
+            </fieldset>
+        </label>
+    
+        <label>Comment
+            <textarea class="comment" name="user-comment" placeholder="Введите текст"></textarea>
+        </label>
+    
+        <button type="submit">Send</button>
+    
+    </form>
+
+</body>
+</html>
