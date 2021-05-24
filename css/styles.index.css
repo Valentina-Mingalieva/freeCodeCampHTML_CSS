@@ -1,0 +1,140 @@
+/* common */
+
+:root {
+  --geometry-color: #edca82;
+  --accent-color: #097770;
+  --bcg-color: #e0cdbe;
+  --section-color: #a9c0a6;
+  --text-color: #1d3c45;
+  --font-family: Ubuntu, sans-serif;
+  --time: 250ms;
+  --delay: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* header */
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--accent-color);
+  font-family: KoHo, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+#navlist {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navlist-item {
+  display: block;
+  padding: 20px 0;
+}
+
+.navlist-item a {
+  color: var(--section-color);
+}
+
+.platzhalter {
+  min-height: 58px;
+}
+
+/* main */
+
+/* welcome-section */
+
+#welcome-section {
+  text-align: center;
+  min-height: 100px;
+  display: block;
+  background-image: url(../images/screen.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#projects {
+  text-align: center;
+  padding-top: 50px;
+  display: block;
+  background: linear-gradient(
+    45deg,
+    rgba(34, 101, 163, 0.5),
+    rgba(103, 0, 31, 0.8)
+  );
+}
+
+#projects-title {
+  text-decoration: underline;
+}
+
+#projects-flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.card {
+  width: 30%;
+  margin: 15px;
+  background: white;
+}
+
+.project-name {
+  display: block;
+  background: grey;
+  padding: 8px;
+}
+
+#profile-link {
+  margin: auto;
+}

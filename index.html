@@ -4,15 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Portfolio Webpage</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;600&family=Ubuntu:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css">
+    <link rel="stylesheet" href="../css/styles.index.css">
 </head>
+
 <body>
-    <ul>
-        <li><a href="./html/task1.html">Tribute Page</a></li>
-        <li><a href="./html/task2.html">Survey Form</a></li>
-        <li><a href="./html/task3.html">Product Landing Page</a></li>
-        <li><a href="./html/task4.html">Technical Documentation Page</a></li>
-        <li><a href="./html/task5.html">Personal Portfolio Webpage</a></li>
-    </ul>
+
+    <header>
+        <nav id="navbar">
+            <ul id="navlist">
+                <li class="navlist-item"><a href="#welcome-section">About</a></li>
+                <li class="navlist-item"><a href="#projects">Work</a></li>
+                <li class="navlist-item"><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="platzhalter"></section>
+
+        <section id="welcome-section">
+            <picture>
+                <source srcset="./images/screen.webp" media="(min-width: 1280x)"
+                    type="image/webp">
+                <source srcset="./images/screen.png" media="(min-width: 1280x)">
+                
+                <img class="screen-picture" src="./images/screen.png" alt="Screen photo">
+            </picture>
+            <h1>Hi! I am Valentina</h1>
+            <p>a frontend developer</p>
+            <button type="button" id="about-link"><a href="#">About me</a></button>
+        </section>
+
+        <section id="projects">
+            <h2 id="projects-title">These are my projects</h2>
+            <ul id="projects-flex">
+                <li class="subsection-title">Individual projects
+                    <div class="card" id="webstudio">
+                        <img src="" alt="webstudio picture">
+                        <div class="project-name">
+                            <h2><a href="https://valentina-mingalieva.github.io/goit-markup-hw-08/"">WebStudio</a></h2>
+                        </div>
+                    </div>
+                </li>
+                <li class="subsection-title">Group projects
+                    <div class=" card">
+                        <img src="" alt="icecream picture">
+                        <div class="project-name">
+                            <h2><a href="https://kirill-filonchuk.github.io/it-band-young-star/">IceCream</a></h2>
+                        </div>
+                    </div>
+                </li>
+                <li class="subsection-title">FreeCodeCamp
+                    <div class="card">
+                        <img src="" alt="3 picture">
+                        <div class="project-name">
+                            <h2><a href="./html/task1.html">Tribute Page</a></h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="4 picture">
+                        <div class="project-name">
+                            <h2><a href="./html/task2.html">Survey Form</a></h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="5 picture">
+                        <div class="project-name">
+                            <h2><a href="./html/task3.html">Product Landing Page</a></h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="" alt="6 picture">
+                        <div class="project-name">
+                            <h2><a href="./html/task4.html">Technical Documentation Page</a></h2>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer id="contacts">
+        <h2>Let's work together...</h2>
+        <p>How do you take your coffee?</p>
+        <ul class="social">
+            <li class="social__item">
+                <a href="#" class="social__link">
+                    <svg class="social__icon">
+                        <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="https://github.com/Valentina-Mingalieva" class="social__link">
+                    <svg class="social__icon">
+                        <use href="./images/icons/sprite.svg#icon-github"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="social__item">
+                <a href="#" class="social__link">
+                    <svg class="social__icon">
+                        <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
 </body>
 </html>
